@@ -1,0 +1,89 @@
+div.ContentWrapper{
+    height:600px;
+}
+div.TopSection{
+    display:block;
+    height:100px;
+}
+div.MiddleSection{
+    text-align:center;
+    line-height:50px;;
+}
+div.BottomSection{
+    text-align:center;
+}
+div.BottomSection>ul>li{
+    list-style-type:none;
+}
+div.SearchLabelContainer{
+    font-size: 36px;
+    font-family: "Courier New", Courier, monospace;
+}
+div.arrowUp{
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid black;
+    margin-left:39px;
+}
+div.arrowDown{
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid black;
+    margin-left:39px;
+}
+#DisplaySolutionTitleText{
+    background:#F7F7F7;
+}
+p.inline-p{
+    display:inline;
+}
+div.inline-div{
+    display:inline-block;
+}
+div.OneComment{
+    margin-top:5px;
+    margin-left:0px;
+    background:#E5ECEE;
+}
+div.OneComment>div>a>img{
+    margin-top:10px;
+    width:50px;
+    height:50px;
+}
+div.SolutionContent{
+    background:#E5ECEE;
+}
+div.SolutionContent>p{
+    text-align:left;
+    margin-left:3%;
+    height:7em;
+    width:94%;
+    overflow:hidden;
+}
+div.OneSolution{
+    margin-top:10px;
+}
+div.OneSolution>a{
+    color:inherit;
+}
+div.OneSolution div.SolutionContent{
+    height:150px;
+    margin-left:0px;
+}
+div.OneSolution>div>div.SolutionRate{
+    width:60px;
+    margin-top:20px;
+}
+div.Solution div.SolutionRate{
+    width:60px;
+    margin-left:80px;
+    margin-top:30px;
+}
+div.SearchedSolutions>hr{
+    margin-top:15px;
+    margin-bottom:5px;
+}
