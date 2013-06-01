@@ -17,7 +17,7 @@ div.SearchedSolutions{
 div.DisplaySolutionContentWrapper{
     margin-left:auto;
     margin-right:auto;
-    width:1300px;
+    width:1400px;
 }
 div.SubmitFormContainer{
     margin-left:auto;
@@ -99,4 +99,11 @@ div.Solution div.SolutionRate{
 div.SearchedSolutions>hr{
     margin-top:15px;
     margin-bottom:5px;
+}
+
+#MainPageQuestion{
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+    display:none;
 }

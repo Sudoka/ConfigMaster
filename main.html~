@@ -30,6 +30,10 @@
                     <div class="SearchLabelContainer">
                         <label for="SearchBox" id="SearchBoxLabel"><h1>ConfigMaster</h1></label>
                     </div>
+                    <div class="alert alert-info" id="MainPageQuestion">
+                        <h4>Please provide more information:</h4>
+                        Please specifiy which OS are you using
+                    </div>
                     <div class="SearchInputContainer">
                         <input type="text" class="span6 input-block-level" name="SearchBox" id="SearchBoxInput"/>
                         <form name="form1" method="post" action="">
@@ -52,7 +56,7 @@
             </div>
         </div>
 
-        <div class="SearchedSolutions row">
+        <div class="BottomSection SearchedSolutions row">
             <div class="OneSolution span11">
                 <div class="control-label span2">
                     <div class="SolutionRate">
