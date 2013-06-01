@@ -30,7 +30,7 @@
                     <div class="SearchLabelContainer">
                         <label for="SearchBox" id="SearchBoxLabel"><h1>ConfigMaster</h1></label>
                     </div>
-                    <div class="alert alert-info" id="MainPageQuestion">
+                    <div class="alert alert-block" id="MainPageQuestion">
                         <h4>Please provide more information:</h4>
                         Please specifiy which OS are you using
                     </div>
