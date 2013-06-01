@@ -31,7 +31,7 @@
                         <label for="SearchBox" id="SearchBoxLabel"><h1>ConfigMaster</h1></label>
                     </div>
                     <div class="SearchInputContainer">
-                        <input type="text" class="span5 input-block-level" name="SearchBox" id="SearchBoxInput"/>
+                        <input type="text" class="span6 input-block-level" name="SearchBox" id="SearchBoxInput"/>
                         <form name="form1" method="post" action="">
                             <div class="control-group">
                                 <div class="controls">
@@ -53,7 +53,7 @@
         </div>
 
         <div class="BottomSection SearchedSolutions row">
-            <div class="OneSolution offset3 span11">
+            <div class="OneSolution ">
                 <div class="control-label span2">
                     <div class="SolutionRate">
                         <a href="">
@@ -99,7 +99,7 @@
                 </a>
             </div>
             <hr class="span11 offset3">
-            <div class="OneSolution offset3 span11">
+            <div class="OneSolution span11">
                 <div class="control-label span2">
                     <div class="SolutionRate">
                         <a href="">
