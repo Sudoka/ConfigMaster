@@ -24,7 +24,7 @@
 			</div>
 		</div>
     </div>
-    <div class="row">
+    <div class="CenterContentWrapper row">
         <div class="span2 UserInfo" style="text-align:right;">
             <a href="#" class="thumbnail" style="margin-left:35px;width:100px;height:100px;">
                 <img src="./img/thumbnail.jpg" alt="" />
@@ -37,7 +37,7 @@
                     <div class="control-group">
                         <label class="control-label"><h4>Title:</h4></label>
                         <div class="controls" id="DisplaySolutionTitleText">
-                            <h4 style="line-height:30px;margin-left:5px;">3 ways to configure java ENV variables</h4>
+                            <h4 style="line-height:30px;margin-left:10px;">3 ways to configure java ENV variables</h4>
                         </div>
                     </div>
                     <div class="control-group Solution">

@@ -52,8 +52,8 @@
             </div>
         </div>
 
-        <div class="BottomSection SearchedSolutions row">
-            <div class="OneSolution ">
+        <div class="SearchedSolutions row">
+            <div class="OneSolution span11">
                 <div class="control-label span2">
                     <div class="SolutionRate">
                         <a href="">

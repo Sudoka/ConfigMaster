@@ -9,10 +9,20 @@ div.MiddleSection{
     text-align:center;
     line-height:50px;;
 }
-div.BottomSection{
+div.SearchedSolutions{
     margin-left:auto;
     margin-right:auto;
-    width:90%;
+    width:1000px;;
+}
+div.DisplaySolutionContentWrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:1300px;
+}
+div.SubmitFormContainer{
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
 }
 div.BottomSection>ul>li{
     list-style-type:none;
