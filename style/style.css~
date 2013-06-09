@@ -98,12 +98,12 @@ div.Solution div.SolutionRate{
 }
 div.SearchedSolutions>hr{
     margin-top:15px;
-    margin-bottom:5px;
+    /*margin-bottom:5px;*/
 }
 
 #MainPageQuestion{
     margin-left:auto;
     margin-right:auto;
-    width:400px;
-    display:none;
+    width:550px;
+    /*display:none;*/
 }
