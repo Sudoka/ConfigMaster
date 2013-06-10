@@ -34,8 +34,9 @@ $(document).ready(function(){
         //TODO: For demo purpose:
         //lookup:countries,
 
+        // <change_python_script_url>
         //TODO: Uncomment the following line, replace it with the actual
-        // python script which answers autocomplete <>
+        // python script which answers autocomplete
         serviceUrl:'SomeFolder/SomeService/autocomplete.py',
       onSelect: function(suggestion){
           //alert($('#SearchBoxInput').val());
@@ -76,6 +77,7 @@ function ProcessKeyPress(e){
         // ajax for the initial query
         $.ajax({
             type:   'get',
+            // <change_python_script_url>
             // put the python url which accept initial query here
             // the query is simply put in the url to form a get request
             url:    "HandleInitialQuery.py?" + $("#SearchBoxInput").val(),
@@ -175,6 +177,7 @@ function HandleSubmit(type){
     // send the answers as json
     $.ajax({
         type:   'post',
+        // <change_python_script_url>
         url:    "HandleAnswer.py?" + $("#SearchBoxInput").html(),
         // I can't see the actual payload data from my debug tools, I assume it
         // do send the json, if it does not work correctly, please let me know
