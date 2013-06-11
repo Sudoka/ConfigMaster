@@ -67,12 +67,6 @@
                                                 style="display:none;">
                                                 <i class="icon-remove"></i>
                                             </button>
-                                            <button class="btn btn-mini TagButton" type="button">Apache
-                                                <i class="icon-remove"></i>
-                                            </button>
-                                            <button class="btn btn-mini TagButton" type="button">MySql 
-                                                <i class="icon-remove"></i>
-                                            </button>
                                         </span>  
                                         <input id="TagInput"/>
                                         <button onClick="AddTagFunction()" class="btn btn-info" type="button">Add Tag</button> 
@@ -86,7 +80,7 @@
             </div>
 
             <div class="BottomSection SearchedSolutions row">
-                <div class="OneSolution span11" style="display:none;">
+                <div  id="hidden_solution" class="OneSolution_hidden span11" style="display:none;">
                     <div class="control-label span2">
                         <div class="SolutionRate">
                             <div class="arrowUp" ></div>
@@ -94,7 +88,7 @@
                             <div class="arrowDown"></div>
                         </div>
                     </div>
-                    <a href="display_solution.html">
+                    <a href="display_solution.html" class="SolutionLink">
                         <div class="span9 SolutionContent">
                             <h4>Let's config MySql, yeah!!!</h4>
                             <p>

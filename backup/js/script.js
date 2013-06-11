@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(){
     // bind to tags to dynamically remove tag
     $("body").on( "click",".TagButton", function(){
         $(this).remove();
@@ -30,28 +30,22 @@ $(document).ready(function() {
     } );
 
     // demo data
-    //var countries = [
-    //{ value: 'Andorra', data: 'AD' },
-    //{ value: 'Zimbabwe', data: 'ZZ' }
-    //];
+    var countries = [
+    { value: 'Andorra', data: 'AD' },
+    { value: 'Zimbabwe', data: 'ZZ' }
+    ];
 
     // bind a third-party autocomplete plugin to the search input box
-    //a = $('#SearchBoxInput').autocomplete({
+    a = $('#SearchBoxInput').autocomplete({
         //TODO: For demo purpose:
         //lookup:countries,
 
         // <change_python_script_url>
         //TODO: Uncomment the following line, replace it with the actual
         // python script which answers autocomplete
-        //serviceUrl:'backend/autocomplete',
-        //onSelect: function (suggestion){
-          //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-        //}
-    //});
-    a = $('#SearchBoxInput').autocomplete({
-      serviceUrl: 'backend/autocomplete',
-      onSelect: function (suggestion) {
-        alert('You selected: ' + suggestion);
+        serviceUrl:'SomeFolder/SomeService/autocomplete.py',
+      onSelect: function(suggestion){
+          //alert($('#SearchBoxInput').val());
       }
     });
 });
@@ -112,9 +106,9 @@ function ProcessKeyPress(e){
             // <change_python_script_url>
             // put the python url which accept initial query here
             // the query is simply put in the url to form a get request
-            url:    "backend/queryParser?query=" + $("#SearchBoxInput").val(),
+            url:    "HandleInitialQuery.py?" + $("#SearchBoxInput").val(),
             success:function(result){
-                //var response = $.parseJSON(result);
+                var response = $.parseJSON(result);
                 // handle the question returned from server
                 HandleQueryResponse(result);
             },
@@ -164,13 +158,13 @@ function HandleSolutionResponse(response){
 
 // handle the questions asked by the server, display the dynamically
 function HandleQuestionResponse(response){
-    var qType = {1:"environment value",2:"software version"};
+    var qType = {1:"OS",2:"software"};
     $("#MainPageQuestion").attr("style","");
     //alert(response["Questions"][0]["data"]);
     $(response["Questions"]).each(function(index,val){
         //alert(val["id"]);
         var questionString = "Please give the " +qType[val["type"]]
-        +" for "+val["data"];
+        +" version of "+val["data"];
     var questionDiv = $("div.hidden_question").clone();
     $(questionDiv).find("label").html(questionString);
     $(questionDiv).find("input").attr("id",val["id"]);
@@ -225,14 +219,14 @@ function HandleSubmit(type){
     console.log(json_answer);
     // send the answers as json
     $.ajax({
-        type:   'POST',
+        type:   'post',
         // <change_python_script_url>
-        url:    "backend/answerProcessor",// + $("#SearchBoxInput").html(),
+        url:    "HandleAnswer.py?",// + $("#SearchBoxInput").html(),
         // I can't see the actual payload data from my debug tools, I assume it
         // do send the json, if it does not work correctly, please let me know
         data:   json_answer,
-        success: function(result){
-            //var response = $.parseJSON(result);
+        success:function(result){
+            var response = $.parseJSON(result);
             HandleQueryResponse(result);
         },
         error:  function(){
